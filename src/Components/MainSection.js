@@ -1,7 +1,16 @@
+import { saveAs } from 'file-saver';
 import React from 'react'
 import { FaDownload } from "react-icons/fa6";
 
 export default function MainSection() {
+
+    const downloadFile = () => {
+        const fileUrl = "https://drive.google.com/uc?export=download&id=1bCP_e0_0B6S02LGv26w-Y2wOVGe_ituu";
+        const fileName = "vasaviTuar.apk";
+    
+        saveAs(fileUrl, fileName);
+    };
+
   return (
     <div className='max-w-[1200px] m-auto flex justify-center items-center min-h-[500px]'>
         <div className='flex flex-col items-center justify-center p-4 space-y-4'>
@@ -13,13 +22,13 @@ export default function MainSection() {
                 <p className='font-bold  text-stone-950 text-[24px]'>Transforming your travel adventures through the power of AR.</p>
             </div>
             <div className='flex flex-wrap justify-between w-[100%]'>
-                <button class="w-fit p-2 rounded-3xl bg-white text-[18px] hover:drop-shadow-2xl group px-7 font-semibold text-gray-900 group flex items-center space-x-3">
+                <button onClick={downloadFile} className="w-fit p-2 rounded-3xl bg-white text-[18px] hover:drop-shadow-2xl group px-7 font-semibold text-gray-900 group flex items-center space-x-3">
                     <FaDownload />
-                    <span class="group-hover:text-blueText">Download for Android</span>
+                    <span className="group-hover:text-blueText">Download for Android</span>
                 </button>
-                <button class="w-fit p-2 rounded-3xl bg-white text-[18px] hover:drop-shadow-2xl group px-7 font-semibold text-gray-900 group flex items-center space-x-3">
+                <button className="w-fit p-2 rounded-3xl bg-white text-[18px] hover:drop-shadow-2xl group px-7 font-semibold text-gray-900 group flex items-center space-x-3">
                     <FaDownload />
-                    <span class="group-hover:text-blueText">Download for Windows</span>
+                    <span className="group-hover:text-blueText">Download for Windows</span>
                 </button>
             </div>
         </div>

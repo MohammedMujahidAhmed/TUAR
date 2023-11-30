@@ -2,6 +2,7 @@ import './App.css';
 import AboutTourism from './Components/AboutTourism';
 import { AboutTuar } from './Components/AboutTuar';
 import Cards from './Components/Cards';
+import Footer from './Components/Footer';
 import HeroSection from './Components/HeroSection';
 import members from "./data"
 
@@ -16,6 +17,7 @@ function App() {
         <p className='font-extrabold text-[28px]'>Our Team</p>
         <Cards members={members}></Cards>
       </div>
+      <Footer/>
     </div>
   );
 }
