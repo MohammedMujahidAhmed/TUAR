@@ -8,10 +8,11 @@ import members from "./data"
 
 
 function App() {
+
   return (
     <div className="w-[100vw]">
-      <HeroSection/>
-      <AboutTuar/>
+      <HeroSection />
+      <AboutTuar />
       <AboutTourism/>
       <div className='p-3 flex flex-col justify-center items-center'>
         <p className='font-extrabold text-[28px]'>Our Team</p>

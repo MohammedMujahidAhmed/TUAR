@@ -2,6 +2,9 @@ import React from 'react'
 import ArMobilePic from '../Assect/AR_mobile_pic.png'
 
 export const AboutTuar = () => {
+
+
+
   return (
     <div className='flex justify-between items-center max-w-[1200px] min-h-[550px] m-auto'>
         <img src={ArMobilePic} alt='ArMobileImage'></img>

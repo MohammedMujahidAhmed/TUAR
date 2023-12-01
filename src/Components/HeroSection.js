@@ -4,7 +4,6 @@ import { NavBar } from './NavBar';
 import MainSection from './MainSection';
 
 
-
 function HeroSection() {
     
   return (
