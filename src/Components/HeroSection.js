@@ -7,7 +7,7 @@ import MainSection from './MainSection';
 function HeroSection() {
     
   return (
-    <div style={{ backgroundImage:`url(${bgImg21})`,backgroundRepeat:"no-repeat", backgroundSize:"cover"}} className='w-[100%] min-h-screen p-2'>
+    <div style={{ backgroundImage:`url(${bgImg21})`,backgroundRepeat:"no-repeat", backgroundSize:"cover"}} className='w-[100%] min-h-screen p-2 flex justify-between'>
         <NavBar/>
         <MainSection/>
     </div>

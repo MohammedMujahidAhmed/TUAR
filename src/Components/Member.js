@@ -20,14 +20,14 @@ function Member({currPos,setCurPos,length,setmember,member}){
     }
 
     return(
-        <div className=" flex flex-col items-center relative gap-4 p-8 shadow-md min-w-[600px] m-auto hover:shadow-2xl bg-white">
+        <div className=" flex flex-col items-center relative gap-4 p-8 shadow-md md:min-w-[300px] lg:min-w-[600px] m-auto hover:shadow-2xl bg-white">
             <div className="">
                 <img className="rounded-full" alt="team_Member_Image" src={member.image}
                     width="90px"
                 ></img>
             </div>
             <div className="flex flex-col items-center">
-                <div className="font-bold text-xl">{member.name}</div>
+                <div className="font-bold text-xl text-center">{member.name}</div>
             </div>
             <div className="flex flex-col items-center gap-3">
                 <div className="flex felx-row gap-2">

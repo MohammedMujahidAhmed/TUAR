@@ -10,7 +10,7 @@ import members from "./data"
 function App() {
 
   return (
-    <div className="w-[100vw]">
+    <div className="w-[100%]">
       <HeroSection />
       <AboutTuar />
       <AboutTourism/>
