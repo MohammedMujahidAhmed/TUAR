@@ -4,11 +4,11 @@ import { NavBar } from './NavBar';
 import MainSection from './MainSection';
 
 
-function HeroSection() {
+function HeroSection({allRefs}) {
     
   return (
-    <div style={{ backgroundImage:`url(${bgImg21})`,backgroundRepeat:"no-repeat", backgroundSize:"cover"}} className='w-[100%] min-h-screen p-2 flex justify-between'>
-        <NavBar/>
+    <div ref={allRefs.homeref} style={{ backgroundImage:`url(${bgImg21})`,backgroundRepeat:"no-repeat", backgroundSize:"cover"}} className='w-[100%] min-h-screen p-2 flex justify-between'>
+        <NavBar allRefs={allRefs}/>
         <MainSection/>
     </div>
     

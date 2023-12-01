@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import './App.css';
 import AboutTourism from './Components/AboutTourism';
 import { AboutTuar } from './Components/AboutTuar';
@@ -9,12 +10,19 @@ import members from "./data"
 
 function App() {
 
+  const homeRef = useRef(null);
+  const tuarRef = useRef(null);
+  const tourismRef = useRef(null);
+  const teamRef = useRef(null);
+
+  const allRefs = {homeref:homeRef,tuarref:tuarRef,tourismref:tourismRef,teamref:teamRef}
+
   return (
     <div className="w-[100%]">
-      <HeroSection />
-      <AboutTuar />
-      <AboutTourism/>
-      <div className='p-3 flex flex-col justify-center items-center'>
+      <HeroSection allRefs={allRefs} />
+      <AboutTuar tuarRef={tuarRef}/>
+      <AboutTourism tourismRef={tourismRef}/>
+      <div ref={teamRef} className='p-3 flex flex-col justify-center items-center'>
         <p className='font-extrabold text-[28px]'>Our Team</p>
         <Cards members={members}></Cards>
       </div>
