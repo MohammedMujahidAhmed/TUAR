@@ -3,10 +3,17 @@ import React from 'react'
 import { FaDownload } from "react-icons/fa6";
 
 export default function MainSection() {
-
+    
     const downloadFile = () => {
-        const fileUrl = "https://drive.google.com/uc?export=download&id=1bCP_e0_0B6S02LGv26w-Y2wOVGe_ituu";
-        const fileName = "vasaviTuar.apk";
+        const fileUrl = "https://drive.google.com/uc?export=download&id=1CdjHU-4Hxux6jhkn7p1GdMhYdIWE5X3n";
+        const fileName = "Tuar1.apk";
+    
+        saveAs(fileUrl, fileName);
+    };
+    
+    const downloadFile1 = () => {
+        const fileUrl = "https://drive.google.com/uc?export=download&id=1t4fTBmUyT8NynzFA_gNo8uukorWOxXXn";
+        const fileName = "Tuar2.apk";
     
         saveAs(fileUrl, fileName);
     };
@@ -21,15 +28,15 @@ export default function MainSection() {
                 <p className='font-bold  text-stone-950 text-[24px]'>Discover the wonders of Visual Tourism:</p>
                 <p className='font-bold  text-stone-950 text-[24px]'>Transforming your travel adventures through the power of AR.</p>
             </div>
-            <div className='flex flex-wrap justify-center w-[100%]'>
+            <div className='md:flex-row flex flex-col justify-center w-[100%] md:space-x-2 space-y-2'>
                 <button onClick={downloadFile} className="w-[90%] md:w-fit p-2 rounded-3xl bg-white sm:text-[18px] hover:drop-shadow-2xl group px-7 font-semibold text-gray-900 group flex items-center justify-center space-x-3">
                     <FaDownload />
-                    <span className="group-hover:text-blueText">Download for Android</span>
+                    <span className="group-hover:text-blueText">Download for Android1</span>
                 </button>
-                {/* <button className="w-fit p-2 rounded-3xl bg-white sm:text-[18px] hover:drop-shadow-2xl group px-7 font-semibold text-gray-900 group flex items-center space-x-3">
+                <button onClick={downloadFile1} className="w-[90%] md:w-fit p-2 rounded-3xl bg-white sm:text-[18px] hover:drop-shadow-2xl group px-7 font-semibold text-gray-900 group flex items-center justify-center space-x-3">
                     <FaDownload />
-                    <span className="group-hover:text-blueText">Download for Windows</span>
-                </button> */}
+                    <span className="group-hover:text-blueText">Download for Android1</span>
+                </button>
             </div>
         </div>
     </div>
