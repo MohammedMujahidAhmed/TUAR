@@ -12,7 +12,7 @@ export default function MainSection() {
     };
     
     const downloadFile1 = () => {
-        const fileUrl = "https://drive.google.com/uc?export=download&id=1t4fTBmUyT8NynzFA_gNo8uukorWOxXXn";
+        const fileUrl = "https://drive.google.com/uc?export=download&id=1M28CUzqIppUZ3rtYjHoDdZaiwwTWtvr2";
         const fileName = "Tuar2.apk";
     
         saveAs(fileUrl, fileName);
@@ -28,14 +28,14 @@ export default function MainSection() {
                 <p className='font-bold  text-stone-950 text-[24px]'>Discover the wonders of Visual Tourism:</p>
                 <p className='font-bold  text-stone-950 text-[24px]'>Transforming your travel adventures through the power of AR.</p>
             </div>
-            <div className='md:flex-row flex flex-col justify-center w-[100%] md:space-x-2 space-y-2'>
+            <div className='md:flex-row flex flex-col justify-center items-center w-[100%] md:space-x-2'>
                 <button onClick={downloadFile} className="w-[90%] md:w-fit p-2 rounded-3xl bg-white sm:text-[18px] hover:drop-shadow-2xl group px-7 font-semibold text-gray-900 group flex items-center justify-center space-x-3">
                     <FaDownload />
                     <span className="group-hover:text-blueText">Download for Android1</span>
                 </button>
                 <button onClick={downloadFile1} className="w-[90%] md:w-fit p-2 rounded-3xl bg-white sm:text-[18px] hover:drop-shadow-2xl group px-7 font-semibold text-gray-900 group flex items-center justify-center space-x-3">
                     <FaDownload />
-                    <span className="group-hover:text-blueText">Download for Android1</span>
+                    <span className="group-hover:text-blueText">Download for Android2</span>
                 </button>
             </div>
         </div>

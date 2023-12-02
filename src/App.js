@@ -6,6 +6,7 @@ import Cards from './Components/Cards';
 import Footer from './Components/Footer';
 import HeroSection from './Components/HeroSection';
 import members from "./data"
+import { QRSection } from './Components/QRSection';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="w-[100%]">
       <HeroSection allRefs={allRefs} />
+      <QRSection/>
       <AboutTuar tuarRef={tuarRef}/>
       <AboutTourism tourismRef={tourismRef}/>
       <div ref={teamRef} className='p-3 flex flex-col justify-center items-center'>
