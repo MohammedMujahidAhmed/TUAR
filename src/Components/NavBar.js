@@ -20,7 +20,7 @@ export const NavBar = ({allRefs}) => {
                   <li onClick={()=>allRefs.tuarref.current.scrollIntoView({behavior:"smooth"})} className='cursor-pointer hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] p-2 rounded-lg'>About Tuar</li>
                   <li onClick={()=>allRefs.tourismref.current.scrollIntoView({behavior:"smooth"})} className='cursor-pointer hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] p-2 rounded-lg'>About Tourism</li>
                   <li onClick={()=>allRefs.teamref.current.scrollIntoView({behavior:"smooth"})} className='cursor-pointer hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] p-2 rounded-lg'>Our Team</li>
-                  // <a href='https://github.com/MohammedMujahidAhmed/TUAR' target='_blank' className='cursor-pointer hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] p-2 rounded-lg'>GitHub</a>
+                  {/* <a href='https://github.com/MohammedMujahidAhmed/TUAR' target='_blank' className='cursor-pointer hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] p-2 rounded-lg'>GitHub</a>*/}
               </ul>
           </div>
           <GiHamburgerMenu onClick={()=>{setHamburgClick(!hamburgClick)}} className='text-[30px] md:hidden'/>
