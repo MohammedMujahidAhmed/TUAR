@@ -6,7 +6,7 @@ const members = [
   },
   {
     id: 2,
-    name: "Priyatham Konda",
+    name: "V Udith",
     image: "https://campussafetyconference.com/wp-content/uploads/2020/08/iStock-476085198.jpg",
   },
   {
@@ -16,7 +16,7 @@ const members = [
   },
   {
     id: 4,
-    name: "G. Smaran",
+    name: "Raj Mishra",
     image: "https://campussafetyconference.com/wp-content/uploads/2020/08/iStock-476085198.jpg",
   },
 ];
